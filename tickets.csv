@@ -1,0 +1,8 @@
+title,description,source,asset_type,user_role,mitre,ioc_count,category,priority
+Multiple failed logins for admin,42 failed sign-ins in 10 minutes then success,azure_ad,cloud_account,admin,T1110,0,auth_anomaly,P2
+Suspicious email with attachment,User received invoice.zip and clicked link,email_gateway,workstation,standard,T1566,2,phishing,P2
+Malware detected by AV,Defender quarantined trojan in downloads,microsoft_defender,workstation,standard,T1204,1,malware,P1
+Port scan detected,High-rate SYN packets from external IP,ids,server,service,T1046,1,recon,P3
+Vulnerability scan results,Nessus found SMB signing disabled,vuln_scanner,server,service,T1210,0,vulnerability,P3
+Data exfil suspected,Large upload to unknown domain after hours,proxy,workstation,standard,T1041,3,exfiltration,P1
+Benign admin activity,Planned password reset for service account,azure_ad,cloud_account,service,T1078,0,benign,P4
